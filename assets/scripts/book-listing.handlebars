@@ -1,11 +1,8 @@
 {{#each books as |book|}}
 
-
- <!-- Developers, why are we using data-id and not just id? -->
   <ul class="book-list" data-id="{{book.id}}">
-  <li><large>Title: {{book.title}}</large></h1></li>
-  <li><small>Author: {{book.author}}</small></h1></li>
-    <li><button class="delete">Clear Book</button></li>
+  <li><large>Title: {{book.title}}</large></li>
+  <li><small>Author: {{book.author}}</small></li>
 </ul>
 
 {{/each}}
