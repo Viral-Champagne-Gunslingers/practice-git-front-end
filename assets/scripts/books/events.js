@@ -10,6 +10,11 @@ const onShowBooks = function (event) {
     .catch(ui.getBooksFailure)
 }
 
+const addHandlers = function (event) {
+  $('.btn-primary').on('submit', onShowBooks)
+}
+
 module.export = {
-  onShowBooks
+  onShowBooks,
+  addHandlers
 }
